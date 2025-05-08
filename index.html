@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Repo APT Lokal - Hello World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>📦 Repo APT - Hello World</h1>
+  <p>Ini adalah contoh repository APT yang di-host via GitHub Pages. Kamu bisa menambahkan ke sistem APT kamu dengan cara berikut:</p>
+  
+  <h2>🔧 Cara Menambahkan Repository</h2>
+  <pre><code>echo "deb [trusted=yes] https://username.github.io/my-apt-repo stable main" | sudo tee /etc/apt/sources.list.d/hello.list
+sudo apt update
+sudo apt install hello-world
+</code></pre>
+
+  <h2>📁 Isi Paket</h2>
+  <ul>
+    <li><strong>Package:</strong> hello-world</li>
+    <li><strong>Version:</strong> 1.0</li>
+    <li><strong>Description:</strong> Program Hello World sederhana</li>
+  </ul>
+
+  <footer>
+    <hr>
+    <p>Disusun oleh <em>username</em> • <a href="https://github.com/username/my-apt-repo">Repo GitHub</a></p>
+  </footer>
+</body>
+</html>
